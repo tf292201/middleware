@@ -1,5 +1,3 @@
-global.items = [
-
-];
+global.items = [];
 
 module.exports = {items}
