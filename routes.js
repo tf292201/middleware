@@ -13,7 +13,7 @@ router.get('/', (req, res) => {
 router.get('/:name', (req, res) => {
     const item = items.find(item => item.name === req.params.name);
     if (item === undefined) {
-        throw new Error('Not Found');
+        throw new Error('Not Found', 404);
     }
     res.json(item);
 });
